@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@200;300;400;500;600&family=Outfit:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sub-text {
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    background: #f4f4f4;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border: 1px solid #dedede;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #010d35;
+}
+
+
+.margin-top {
+    margin-top: 70px;
+}
+
+.tx-spacing {
+    word-spacing: 2px;
+}
+
+.display-flex
+ {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.carter {
+    font-family: 'Carter One';
+}
+
+.midi-font {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.small-font {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.tiny-font {
+    font-size: 10px;
+}
+
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.tx-white {
+    color: #fff;
+}
+
+.tx-grey {
+    color: #f4f4fb;
+}
+
+.tx-green {
+    color: #04cf30;
+    /* color: lime; */
+    text-decoration: none;
+}
+
+.btn-long {
+    width:100%;
+    padding: 5px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background:#000;
+    color: #f7f7f7;
+    border-radius: 3px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.btn-long:hover{
+    color: lime;
+    border: 1px solid lime;
+    background: rgb(0, 0, 10);
+}
+
+.btn{
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+    background: transparent;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    border: 1px solid lime;
+    color: lime;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    padding: 0px 15%;
+    background: linear-gradient(to right, rgb(4, 4, 14),rgb(45, 45, 46), black);    
+    z-index: 50;
+    height: 50px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 10px;
+    color: #fff;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav ul a:hover {
+    color: lime;
+    border-bottom: 1px solid lime;
+}
+
+.nav i {
+    color: lime;
+    font-size: 25px;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.hor-margin {
+    margin: 0 10px;
+}
+
+.vat-margin {
+    margin: 10px 0;
+}
+
+.section-1{
+    background-image: url('../images/5.jpg');
+    /* background-image: url('../img/wallpaperflare.com_wallpaper\ \(44\).jpg'); */
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* margin-top: 50px; */
+ }
+ .section-1::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+ }
+
+
+ .container {
+    width: 70%;
+    margin: auto;
+ }
+
+ .mini-font {
+    font-size: 13px;
+ }
+
+ .action-card {  
+    margin: 20px 0;
+ }
+
+ .action-card a {
+    margin-top: 10px;
+ }
+
+.about {
+    /* height: 100vh; */
+    padding-top: 40px;
+    background: #f4f4fb;
+}
+
+.ghost-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.about .container {
+/* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); */
+    padding: 10px;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+    background-color: #f4f4fb;
+}
+
+.ghost-card {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.mini-img {
+    width:100%;
+    height: 250px;
+}
+img {
+    width: 100%; 
+    height: 100%;
+}
+
+
+.services {
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+}
+
+
+.services{
+    background-image: url('../img/tennis_2.avif');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /* height: 80vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* margin-top: 50px; */
+ }
+ .services::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+ }
+
+
+.long-card {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f3f3f8;
+    color: #010d35;
+    margin: 10px 0;
+    
+}
+
+.form-cont {
+    margin-top: 50px;
+}
+/*    - - - - - -profiles - - - - -    */
+/*    - - - - - -profiles - - - - -    */
+/*    - - - - - -profiles - - - - -    */
+
+/* .profiles {
+   
+} */
+
+.profile-card-div {
+    /* border: 1px solid #111; */
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f4fb;
+    border-radius: 10px;
+}
+
+.profile-card {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card-text {
+
+}
+.profile-card-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+}
+.profile-card img {
+    border-radius: 50%;
+}
+
+.profile-card-text {
+    padding:  3px 0;
+    width: 80%;
+    background: #fff;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*  - - - - - - Enroll Plans - - - - - */
+/*  - - - - - - Enroll Plans - - - - - */
+/*  - - - - - - Enroll Plans - - - - - */
+.enroll-plans {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.danger {
+    border-radius: 50%;
+    padding: 1px 5px;
+    margin: 4px;
+    border: 1px solid rgb(236, 91, 91);
+}
+
+.long-card-danger {
+    background: rgb(228, 112, 112);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    width: 95%;
+    margin: auto;
+}
+
+.plan-card {
+    border: 1px solid #dedede;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.plan-card-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*  - - - - - GALLERY - - - - - - */
+/*  - - - - - GALLERY - - - - - - */
+/*  - - - - - GALLERY - - - - - - */
+.gallery {
+    margin-top: 10px;
+}
+
+.gallery-card-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.gallery-card {
+    display: flex;
+    background-color: #f4f4f4;
+    border-radius:0 5px 5px 0;
+}
+
+.gallery-card-text {
+    margin:  5px 10px;
+    width: 70%;
+}
+
+.gallery-card-img {
+    width: 120px;
+    height: 120px;
+}
+
+.gallery-card-img img {
+    border-radius: 5px;
+}
+
+.comming-competions {
+    margin-top: 20px;
+}
+
+/*  - - - - - PLans - - - -  */
+/*  - - - - - PLans - - - -  */
+/*  - - - - - PLans - - - -  */
+
+.plan-card button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #dedede;
+}
+
+.plan-card button:hover {
+    border: 1px solid lime;
+    color: limegreen;
+}
+
+/* - -  - - -Grid Boxes - - - - */
+/* - -  - - -Grid Boxes - - - - */
+/* - -  - - -Grid Boxes - - - - */
+
+.grid-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.box-card {
+    /* border: 1px solid green; */
+    text-align: center;
+    background: #f4f4f4;
+}
+
+/*  - - - - store card - - - - */
+/*  - - - - store card - - - - */
+/*  - - - - store card - - - - */
+
+.store-section {
+    background: radial-gradient(50% 50% at 50% 50%, #004667 0%, #043C56 63.15%, #05405B 100%);
+    height: 95vh;
+    margin-top: 50px;
+    color: #fff;
+    padding: 10px;
+}
+
+.store-card-div {
+    /* width: 80%; */
+    margin:40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.store-card {
+    /* border: 1px solid navy; */
+    width: 100%;
+    
+}
+
+.item-img {
+    width: 100%;
+    height: 70%;
+    /* width: 140px;
+    height: 140px; */
+}
+
+.item-title {
+    background:#0D72AB ;
+    padding: 8px;
+    color: #011146;
+    font-weight: 600;
+    height: 40px;
+}
+
+.item-info {
+    background:#0D72AB ;
+    padding: 3px;
+    color: #dedede;
+    height: 50px;
+}
+
+/*  */
+@media(max-width:760px){
+    .nav {
+        padding: 0 5%;
+    }
+   .heading {
+    width: 80%;
+   }
+   .small-font {
+    font-size: 14px;
+   } 
+   .container {
+    width: 80%;
+    margin: auto;   
+   }   
+   .ghost-container {
+    grid-template-columns: 1fr;
+   }
+   .mini-font {
+        width: 100%;
+    }
+    .profile-card {
+        height: 270px;
+    }
+    .profile-card-div {
+        width: 80%;
+    }
+    .profile-card-img {
+        height: 100px;
+        width: 100px;   
+    }
+    /* gallery */
+    .gallery-card-img {
+    }
+
+    /* - - - store - - - */
+    .store-card-div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+} 
+
+@media(max-width:550px){
+    .small-font {
+        font-size: 13px;
+    } 
+    .mini-font {
+        font: 10px;
+    }
+    .heading {
+        width: 90%;
+    }
+    .container {
+        width: 95%;
+    }   
+    .section-1 {
+        height: 60vh;
+    }
+    .mini-img {
+        width:100%;
+        height: 100%;
+    }
+    .profile-card {
+        height: 150px;
+    }
+    /* --- */
+    .gallery-card-img {
+        /* width: 80px;
+        height: 80px; */
+    }
+    /* .gallery-card-img img {
+        width: 100%;
+        height: 100%;
+    } */
+    .profile-card-div {
+        width: 90%;
+    }
+    .profile-card-img {
+        border-radius: 50%;
+        padding: 5px;
+        background: #f3f3f8;
+        width: 80px;
+        height: 80px;
+    }
+    .profile-card-img img {
+        border-radius: 50%;
+    }
+    /* - - - gallery - - - */
+    .gallery-card-text {
+        margin: 5px;
+    }
+    /*  - -  store - -   */
+    .store-card-div {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin:20px auto;
+        gap: 10px;
+
+    }
+    .store-card {
+        margin: 10px 0;
+    }
+    .item-img {
+        height: 60%;
+    }
+} 
